@@ -27,8 +27,8 @@ public class TorpedoStore {
       }
     }
   }
-
- Random generator = new Random();
+ // a random number generator to simulate random failures
+ private Random generator = new Random();
 
   public boolean fire(int numberOfTorpedos){
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
